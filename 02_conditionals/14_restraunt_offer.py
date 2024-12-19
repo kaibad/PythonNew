@@ -42,5 +42,6 @@ if offer_start_time <= order_time <= offer_end_time:
         print("\nYou need to order at least two main courses to be eligible for the offer.")
 else:
      print("\nThe offer is only available between 7 PM and 9 PM. Please visit during the offer hours.")
+     
 # Display total courses ordered
-print(f"\nTotal main courses ordered: {num_main_course}")
+# print(f"\nTotal main courses ordered: {num_main_course}")
