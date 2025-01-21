@@ -1,0 +1,115 @@
+iteration tool
+(for,comprehension) these are the iteratable tools
+
+iterable object(lists,file)
+ 
+__next__ : this is response
+
+1) iter tool queries the iterable object [ iter() ] 
+2) iterable object returns the response as __next__
+
+==using the python shell===
+f = open('first.py')
+>>> f.__next__()
+'import time\n'
+
+=============================
+>>> f = open('first.py')
+>>> f.__next__()
+'import time\n'
+>>> f.__next__()
+'print("this is kailash")\n'
+>>> f.__next__()
+'username="kailash"\n'
+>>> f.__next__()
+'print(username)'
+>>> f.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+
+============
+for line in open('first.py'):
+...     print(line)
+... 
+import time
+
+print("this is kailash")
+
+username="kailash"
+
+print(username)
+
+
+=========================
+
+>>> myList=[1,2,3,4]
+>>> I = iter(myList)
+>>> I
+<list_iterator object at 0x11070ab00>
+>>> I.__next__()
+1
+>>> I
+<list_iterator object at 0x11070ab00>
+>>> I.__next__()
+2
+>>> I.__next__()
+3
+>>> I.__next__()
+4
+>>> I.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> 
+
+it is pointing the starting of the memory as memory reference
+ and the next is inecremented to point to the next item
+
+
+ SyntaxError: unterminated string literal (detected at line 1)
+>>> f = open('first.py')
+>>> iter(f)
+<_io.TextIOWrapper name='first.py' mode='r' encoding='UTF-8'>
+>>> iter(f) is f.__iter__()
+True
+>>> mynewList=[1,2,3]
+>>> iter(mynewList) is mynewList
+False
+>>> 
+
+
+dictionry is also the iterable 
+
+
+
+>>> range(5)
+range(0, 5)
+>>> R - range(5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'R' is not defined
+>>> R= range(5)
+>>> R
+range(0, 5)
+>>> I - iter(R)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'dict_keyiterator' and 'range_iterator'
+>>> I =  iter(R)
+>>> next(I)
+0
+>>> next(I)
+1
+>>> next(I)
+2
+>>> 
+>>> next(I)
+3
+>>> next(I)
+4
+>>> next(I)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> next(I)
