@@ -17,7 +17,7 @@ f = open('first.py')
 >>> f = open('first.py')
 >>> f.__next__()
 'import time\n'
->>> f.__next__()
+>>> f.__next__()    
 'print("this is kailash")\n'
 >>> f.__next__()
 'username="kailash"\n'
