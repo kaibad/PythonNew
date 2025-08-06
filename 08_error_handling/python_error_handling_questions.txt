@@ -1,0 +1,17 @@
+
+1. Write a program that asks the user to enter a number and prints its square.
+Use try-except to handle the case when the input is not a valid number.
+
+2. You are opening a file using open("data.txt"). Handle the error gracefully if the file is not found, and display a custom message to the user.
+
+3. Write a function that divides two numbers.
+Handle ZeroDivisionError and any other unexpected errors using multiple except blocks.
+Also, make sure to use finally to print "End of function."
+
+4. Use try-except-else to read a number from the user and print whether it is even or odd.
+Ensure that the else block is used properly and explain its role.
+
+5. Define a custom exception called NegativeValueError.
+Write a function that accepts a positive integer and raises NegativeValueError if the value is negative.
+Demonstrate how to catch and handle this custom exception.
+
